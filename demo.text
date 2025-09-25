@@ -1,0 +1,16 @@
+<section class="banner h-screen flex flex-col overflow-hidden relative">
+                <!-- Hero Background -->
+                <div class="px-4 sm:px-8 md:px-12 lg:px-20 lg:py-20">
+                    
+
+                    
+                    <!-- Action Cards -->
+                    <div class=" wraperCards border-t border-t-gray-300 md:px-20 relative">
+                        <div class=" container mx-auto px-4">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </section>

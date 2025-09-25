@@ -8,8 +8,8 @@
     <link href="./output.css" rel="stylesheet" />
 </head>
 
-<body class=" overflow-hidden">
- <div id="preloader" class="fixed inset-0 bg-accent z-500"></div>
+<body>
+    <div id="preloader" class="fixed inset-0 bg-accent z-500"></div>
 
     <header
         class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border border-white/30 shadow-lg ">
@@ -121,225 +121,216 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
             <!-- Hero Section -->
-            <section class="banner" class="min-h-screen flex flex-col">
-                <!-- Hero Background -->
-                <div class="relative px-4 sm:px-8 md:px-12 lg:px-20 ">
-                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat">
-                        <section class="comparisonSection relative pb-[51.10%] w-auto">
-                            <div class="comparisonImage beforeImage w-full h-full">
-                                <img src="./Image/New Project2.webp"
-                                    alt="before" class="absolute top-0 w-full h-full object-cover">
-                            </div>
-                            <div
-                                class="comparisonImage afterImage absolute top-0 w-full h-full overflow-hidden translate-x-full">
-                                <img src="https://scontent.fcgp3-1.fna.fbcdn.net/v/t39.30808-6/487048401_122122645688699970_7286355968821296252_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=A0PsBUsZvikQ7kNvwE69pgD&_nc_oc=AdnfxPy6d6vX1ABffL4DpMbA7tGQmzSs6nkYGwomytFPcgT-6dUk1OyFSC09HCTZNf4&_nc_zt=23&_nc_ht=scontent.fcgp3-1.fna&_nc_gid=1tLgu1dmbHyo8wQpjaRAZA&oh=00_AfaZouGpkniXPvQb8nl7aBMtA38PfBeZQHUSzO314rz7JA&oe=68DAD097"
-                                    alt="after" class="absolute top-0 w-full h-full object-cover -translate-x-full">
-                            </div>
-                        </section>
+            <section class="h-screen bg-red-300 w-full relative flex items-center">
+                <div class="absolute inset-0">
+                    <img src="./Image/New Project2.webp" alt="before" class="w-full h-full object-cover">
+                </div>
+                <!-- Hero Content -->
+                <div class="relative z-10 container mx-auto">
+                    <div class="max-w-2xl text-center md:text-left" id="primary_Section">
+                        <h1 id="primary_title"
+                            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-snug md:leading-tight">
+                            Exceptional providers<br class="hidden sm:block" />
+                            dedicated to your care
+                        </h1>
 
-                    </div>
+                        <p id="primary_subtitle"
+                            class="text-base sm:text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
+                            Whether you need routine care or specialized treatment, we are
+                            here to provide you with the highest level of medical excellence.
+                        </p>
 
-                    <!-- Hero Content -->
-                    <div class="relative z-10 container mx-auto pt-40 pb-10 ">
-                        <div class="max-w-2xl text-center md:text-left" id="primary_Section">
-                            <h1 id="primary_title"
-                                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-snug md:leading-tight">
-                                Exceptional providers<br class="hidden sm:block" />
-                                dedicated to your care
-                            </h1>
-
-                            <p id="primary_subtitle"
-                                class="text-base sm:text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-                                Whether you need routine care or specialized treatment, we are
-                                here to provide you with the highest level of medical excellence.
-                            </p>
-
-                            <div id="primary_button" class="flex justify-center md:justify-start">
-                                <a href="#"
-                                    class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-white bg-white/10 border border-white/20 rounded-xl shadow-lg backdrop-blur-md transition-all duration-300 hover:bg-white/20">
-                                    Find Provider
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="ml-2">
-                                        <path d="M18 8L22 12L18 16" />
-                                        <path d="M2 12H22" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Action Cards -->
-                    <div class=" wraperCards border-t border-t-gray-300 md:px-20 relative">
-                        <div class="actionCards container mx-auto px-4">
-                            <div
-                                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-4 text-background  group-hover:text-gray-950">
-                                <!-- Card 1 -->
-                                <a data-speed="clamp(.8)" href="#"
-                                    class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
-                                    <div class="flex items-center space-x-4 w-full">
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 transition-all duration-300">
-                                                <circle cx="10" cy="7" r="4" />
-                                                <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
-                                                <circle cx="17" cy="17" r="3" />
-                                                <path d="m21 21-1.9-1.9" />
-                                            </svg>
-                                        </div>
-                                        <div class="flex-1 min-w-0  group-hover:text-gray-950">
-                                            <h3 class="text-base sm:text-lg font-semibold transition-colors">
-                                                Find a Provider
-                                            </h3>
-                                            <p class="text-sm leading-snug">
-                                                Connect with qualified healthcare professionals
-                                            </p>
-                                        </div>
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
-                                                <path d="M5 12h14" />
-                                                <path d="m12 5 7 7-7 7" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Card 1 -->
-                                <a data-speed="clamp(1)" href="#"
-                                    class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
-                                    <div class="flex items-center space-x-4 w-full">
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 transition-all duration-300">
-                                                <circle cx="10" cy="7" r="4" />
-                                                <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
-                                                <circle cx="17" cy="17" r="3" />
-                                                <path d="m21 21-1.9-1.9" />
-                                            </svg>
-                                        </div>
-                                        <div class="flex-1 min-w-0  group-hover:text-gray-950">
-                                            <h3 class="text-base sm:text-lg font-semibold transition-colors">
-                                                Find a Provider
-                                            </h3>
-                                            <p class="text-sm leading-snug">
-                                                Connect with qualified healthcare professionals
-                                            </p>
-                                        </div>
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
-                                                <path d="M5 12h14" />
-                                                <path d="m12 5 7 7-7 7" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Card 1 -->
-                                <a data-speed="clamp(1.20)" href="#"
-                                    class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
-                                    <div class="flex items-center space-x-4 w-full">
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 transition-all duration-300">
-                                                <circle cx="10" cy="7" r="4" />
-                                                <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
-                                                <circle cx="17" cy="17" r="3" />
-                                                <path d="m21 21-1.9-1.9" />
-                                            </svg>
-                                        </div>
-                                        <div class="flex-1 min-w-0  group-hover:text-gray-950">
-                                            <h3 class="text-base sm:text-lg font-semibold transition-colors">
-                                                Find a Provider
-                                            </h3>
-                                            <p class="text-sm leading-snug">
-                                                Connect with qualified healthcare professionals
-                                            </p>
-                                        </div>
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
-                                                <path d="M5 12h14" />
-                                                <path d="m12 5 7 7-7 7" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Card 1 -->
-                                <a data-speed="clamp(1.3)" href="#"
-                                    class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
-                                    <div class="flex items-center space-x-4 w-full">
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 transition-all duration-300">
-                                                <circle cx="10" cy="7" r="4" />
-                                                <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
-                                                <circle cx="17" cy="17" r="3" />
-                                                <path d="m21 21-1.9-1.9" />
-                                            </svg>
-                                        </div>
-                                        <div class="flex-1 min-w-0  group-hover:text-gray-950">
-                                            <h3 class="text-base sm:text-lg font-semibold transition-colors">
-                                                Find a Provider
-                                            </h3>
-                                            <p class="text-sm leading-snug">
-                                                Connect with qualified healthcare professionals
-                                            </p>
-                                        </div>
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
-                                                <path d="M5 12h14" />
-                                                <path d="m12 5 7 7-7 7" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                        <div id="primary_button" class="flex justify-center md:justify-start">
+                            <a href="#"
+                                class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-medium text-white bg-white/10 border border-white/20 rounded-xl shadow-lg backdrop-blur-md transition-all duration-300 hover:bg-white/20">
+                                Find Provider
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="ml-2">
+                                    <path d="M18 8L22 12L18 16" />
+                                    <path d="M2 12H22" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Emergency Hotline -->
-                <div class="bg-primary text-white py-3 scale-z-1">
-                    <div class="container mx-auto px-4">
+
+                <div class="absolute left-0 right-0 bottom-0">
+                    <div class="actionCards container mx-auto hidden xl:block">
                         <div
-                            class="flex flex-col sm:flex-row items-center justify-center sm:space-x-3 space-y-2 sm:space-y-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
-                                <path
-                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
-                            </svg>
-                            <span class="text-base sm:text-lg font-medium">Emergency Hotline</span>
-                            <span class="text-lg sm:text-2xl font-bold">1-800-P2P-CARE</span>
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-4 text-background  group-hover:text-gray-950">
+                            <!-- Card 1 -->
+                            <a href="#"
+                                class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
+                                <div class="flex items-center space-x-4 w-full">
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-pencil-ruler-icon lucide-pencil-ruler">
+                                            <path
+                                                d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13" />
+                                            <path d="m8 6 2-2" />
+                                            <path d="m18 16 2-2" />
+                                            <path
+                                                d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17" />
+                                            <path
+                                                d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                                            <path d="m15 5 4 4" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0  group-hover:text-gray-950">
+                                        <h3 class="text-base sm:text-lg font-semibold transition-colors">
+                                            Career with Unico
+                                        </h3>
+                                        <p class="text-sm leading-snug">
+                                            Connect with qualified healthcare professionals
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
+                                            <path d="M5 12h14" />
+                                            <path d="m12 5 7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Card 2 -->
+                            <a ef="#"
+                                class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
+                                <div class="flex items-center space-x-4 w-full">
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-background  group-hover:text-gray-950 transition-all duration-300">
+                                            <circle cx="10" cy="7" r="4" />
+                                            <path d="M10.3 15H7a4 4 0 0 0-4 4v2" />
+                                            <circle cx="17" cy="17" r="3" />
+                                            <path d="m21 21-1.9-1.9" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0  group-hover:text-gray-950">
+                                        <h3 class="text-base sm:text-lg font-semibold transition-colors">
+                                            Find a Provider
+                                        </h3>
+                                        <p class="text-sm leading-snug">
+                                            Connect with qualified healthcare professionals
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
+                                            <path d="M5 12h14" />
+                                            <path d="m12 5 7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Card 3 -->
+                            <a href="#"
+                                class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
+                                <div class="flex items-center space-x-4 w-full">
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-map-pin-icon lucide-map-pin">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0  group-hover:text-gray-950">
+                                        <h3 class="text-base sm:text-lg font-semibold transition-colors">
+                                            Locate Us
+                                        </h3>
+                                        <p class="text-sm leading-snug">
+                                            Plot#1,Road#5,Block#G,Halishahar,Boropole Circle, Chattogram, Bangladesh,
+                                            4216
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
+                                            <path d="M5 12h14" />
+                                            <path d="m12 5 7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- Card 4 -->
+                            <a href="#"
+                                class="bg-background/20 backdrop-blur-sm group flex items-center p-6 border border-white/30 shadow-md hover:shadow-xl rounded-2xl transition-all duration-300">
+                                <div class="flex items-center space-x-4 w-full">
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-notebook-pen-icon lucide-notebook-pen">
+                                            <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
+                                            <path d="M2 6h4" />
+                                            <path d="M2 10h4" />
+                                            <path d="M2 14h4" />
+                                            <path d="M2 18h4" />
+                                            <path
+                                                d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0  group-hover:text-gray-950">
+                                        <h3 class="text-base sm:text-lg font-semibold transition-colors">
+                                            Book an Appointment
+                                        </h3>
+                                        <p class="text-sm leading-snug">
+                                            Connect with qualified healthcare professionals
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-background  group-hover:text-gray-950 group-hover:translate-x-1 transition-all duration-300">
+                                            <path d="M5 12h14" />
+                                            <path d="m12 5 7 7-7 7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Emergency Hotline -->
+                    <div class="bg-primary text-white py-3">
+                        <div class="container mx-auto px-4">
+                            <div
+                                class="flex flex-col sm:flex-row items-center justify-center sm:space-x-3 space-y-2 sm:space-y-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                                    <path
+                                        d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                                </svg>
+                                <span class="text-base sm:text-lg font-medium">Emergency Hotline</span>
+                                <span class="text-lg sm:text-2xl font-bold">1-800-P2P-CARE</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- Services Section -->
-            <section class=" py-20 px-4 sm:px-6 lg:px-20 overflow-hidden">
+            <section class="py-20 px-4 sm:px-6 lg:px-20 overflow-hidden bg-primary/10 text-slate-800">
                 <div class="relative container mx-auto">
                     <!-- Section Header -->
                     <div class="text-center mb-16" id="headerSection">
-                        <h3 class="text-4xl text-white font-bold mb-2 " id="secondary_title">Services</h3>
-                        <p class="mt-4 text-white max-w-2xl mx-auto " id="secondary_subtitle">
+                        <h3 class="text-4xl font-bold mb-2 " id="secondary_title">Services</h3>
+                        <p class="mt-4 max-w-2xl mx-auto " id="secondary_subtitle">
                             Discover Unico Hospital's specialized, each dedicated to delivering top-tier medical
                             with a focus on your unique needs. From advanced heart treatments to comprehensive pediatric
                             care.
@@ -364,23 +355,22 @@
                                             d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold mb-2 text-background">Cardiology</h3>
-                                <p class="text-sm sm:text-base text-background">
+                                <h3 class="text-xl font-semibold mb-2">Cardiology</h3>
+                                <p class="text-sm sm:text-base">
                                     Heart and cardiovascular specialists for comprehensive cardiac care.
                                 </p>
                             </div>
 
                             <!-- Tags -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">ECG</span>
-                                <span
-                                    class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">Echocardiogram</span>
-                                <span class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">Heart
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">ECG</span>
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">Echocardiogram</span>
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">Heart
                                     Surgery</span>
                             </div>
 
                             <!-- Info -->
-                            <div class="flex items-center justify-between text-xs text-background mb-4">
+                            <div class="flex items-center justify-between text-xs mb-4">
                                 <div class="flex items-center gap-1">
                                     <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path
@@ -420,30 +410,28 @@
                                 <div
                                     class="h-12 w-12 bg-background rounded-xl flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/20">
                                     <!-- Icon -->
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="h-6 w-6 text-primary group-hover:text-background" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary group-hover"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path
                                             d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold mb-2 text-background">Cardiology</h3>
-                                <p class="text-sm sm:text-base text-background">
+                                <h3 class="text-xl font-semibold mb-2">Dietary</h3>
+                                <p class="text-sm sm:text-base">
                                     Heart and cardiovascular specialists for comprehensive cardiac care.
                                 </p>
                             </div>
 
                             <!-- Tags -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">ECG</span>
-                                <span
-                                    class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">Echocardiogram</span>
-                                <span class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">Heart
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">ECG</span>
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">Echocardiogram</span>
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">Heart
                                     Surgery</span>
                             </div>
 
                             <!-- Info -->
-                            <div class="flex items-center justify-between text-xs text-background mb-4">
+                            <div class="flex items-center justify-between text-xs mb-4">
                                 <div class="flex items-center gap-1">
                                     <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path
@@ -475,37 +463,35 @@
                         </div>
                         <!-- Single Card -->
                         <div class=" group bg-background/30 backdrop-blur-xl border border-white/20 shadow-lg
-                            rounded-xl p-6 flex flex-col justify-between transition-all duration-300
-                            hover:-translate-y-2 hover:shadow-xl">
+                                                rounded-xl p-6 flex flex-col justify-between transition-all duration-300
+                                                hover:-translate-y-2 hover:shadow-xl">
                             <!-- Card Top -->
                             <div class="pb-4">
                                 <div
                                     class="h-12 w-12 bg-background rounded-xl flex items-center justify-center mb-4 transition-colors group-hover:bg-primary/20">
                                     <!-- Icon -->
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="h-6 w-6 text-primary group-hover:text-background" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary group-hover"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path
                                             d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                                     </svg>
                                 </div>
-                                <h3 class="text-xl font-semibold mb-2 text-background">Cardiology</h3>
-                                <p class="text-sm sm:text-base text-background">
+                                <h3 class="text-xl font-semibold mb-2">Pharmacy</h3>
+                                <p class="text-sm sm:text-base">
                                     Heart and cardiovascular specialists for comprehensive cardiac care.
                                 </p>
                             </div>
 
                             <!-- Tags -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">ECG</span>
-                                <span
-                                    class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">Echocardiogram</span>
-                                <span class="px-3 py-1 bg-primary/10 text-background text-xs rounded-full">Heart
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">ECG</span>
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">Echocardiogram</span>
+                                <span class="px-3 py-1 bg-primary/10 text-xs rounded-full">Heart
                                     Surgery</span>
                             </div>
 
                             <!-- Info -->
-                            <div class="flex items-center justify-between text-xs text-background mb-4">
+                            <div class="flex items-center justify-between text-xs mb-4">
                                 <div class="flex items-center gap-1">
                                     <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path
@@ -540,7 +526,7 @@
                     <!-- Footer Button -->
                     <div class="text-center mt-12">
                         <a href="#"
-                            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-white/20 border border-white/30 shadow hover:bg-white/30 transition">
+                            class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-white/80 border border-white/30 shadow hover:bg-white/40 transition">
                             View All Services
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" stroke-width="2">
@@ -825,7 +811,7 @@
             </section>
 
             <!-- ========== Doctors Section ========== -->
-            <section class="relative px-4 md:px-20 py-12 md:py-20">
+            <section class="relative py-48 px-20 overflow-hidden">
                 <!-- Shadow Image -->
                 <img src="./Image/shadow.svg" alt=""
                     class="absolute top-0 left-0 w-full h-full object-contain md:object-cover pointer-events-none">
@@ -945,8 +931,8 @@
                     <!-- Newsletter Section -->
                     <div class=" p-8 mb-16">
                         <div class="max-w-4xl mx-auto text-center">
-                            <h3 class="text-3xl font-bold mb-4 text-gray-900">Stay Connected with P2P Healthcare</h3>
-                            <p class="text-gray-700 mb-6 text-lg">
+                            <h3 class="text-3xl font-bold mb-4 text-background">Stay Connected with P2P Healthcare</h3>
+                            <p class="text-background mb-6 text-lg">
                                 Get health tips, provider updates, and exclusive offers delivered to your inbox.
                             </p>
                             <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -975,51 +961,66 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
                         <!-- Brand Section -->
                         <div class="lg:col-span-2">
-                            <img src="p2p-logo.png" alt="P2P Healthcare" class="h-16 w-auto mb-6 brightness-0 invert" />
-                            <p class="text-background/80 mb-6 leading-relaxed">
+                            <img src="Image/logo.jpg" alt="P2P Healthcare"
+                                class="h-16 w-auto mb-6 brightness-0 invert" />
+                            <p class="text-background mb-6 leading-relaxed">
                                 Connecting patients with healthcare providers for personalized,
                                 quality care. Where precision meets perfection in healthcare
                                 delivery.
                             </p>
                             <div class="space-y-3">
                                 <div class="flex items-center space-x-3">
-                                    <i class="fas fa-phone h-5 w-5 text-primary"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone">
+                                        <path
+                                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+                                    </svg>
                                     <span>+1 (234) 567-890</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
-                                    <i class="fas fa-envelope h-5 w-5 text-primary"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail">
+                                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    </svg>
                                     <span>info@p2phealthcare.com</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
-                                    <i class="fas fa-map-marker-alt h-5 w-5 text-primary"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin">
+                                        <path
+                                            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
                                     <span>123 Healthcare Blvd, Medical City</span>
                                 </div>
                             </div>
                         </div>
-
                         <!-- Services -->
                         <div>
                             <h4 class="font-bold text-lg mb-4 text-background">Services</h4>
                             <ul class="space-y-2">
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Find
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Find
                                         Providers</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Book
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Book
                                         Appointments</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Telemedicine</a>
+                                        class="text-background hover:text-primary transition-colors">Telemedicine</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Emergency
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Emergency
                                         Care</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Health
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Health
                                         Records</a>
                                 </li>
                             </ul>
@@ -1030,24 +1031,21 @@
                             <h4 class="font-bold text-lg mb-4 text-background">Company</h4>
                             <ul class="space-y-2">
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">About
+                                    <a href="#" class="text-background hover:text-primary transition-colors">About
                                         Us</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">How It
+                                    <a href="#" class="text-background hover:text-primary transition-colors">How It
                                         Works</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Careers</a>
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Careers</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Press</a>
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Press</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Contact</a>
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -1057,23 +1055,23 @@
                             <h4 class="font-bold text-lg mb-4 text-background">Support</h4>
                             <ul class="space-y-2">
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Help
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Help
                                         Center</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Privacy
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Privacy
                                         Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Terms of
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Terms of
                                         Service</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Provider
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Provider
                                         Login</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Patient
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Patient
                                         Portal</a>
                                 </li>
                             </ul>
@@ -1084,24 +1082,24 @@
                             <h4 class="font-bold text-lg mb-4 text-background">Specialties</h4>
                             <ul class="space-y-2">
                                 <li>
-                                    <a href="#" class="text-background/70 hover:text-primary transition-colors">Primary
+                                    <a href="#" class="text-background hover:text-primary transition-colors">Primary
                                         Care</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Cardiology</a>
+                                        class="text-background hover:text-primary transition-colors">Cardiology</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Neurology</a>
+                                        class="text-background hover:text-primary transition-colors">Neurology</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Pediatrics</a>
+                                        class="text-background hover:text-primary transition-colors">Pediatrics</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="text-background/70 hover:text-primary transition-colors">Orthopedics</a>
+                                        class="text-background hover:text-primary transition-colors">Orthopedics</a>
                                 </li>
                             </ul>
                         </div>
@@ -1112,7 +1110,7 @@
                         <div class="flex flex-col md:flex-row items-center justify-between gap-4">
 
                             <!-- Copyright -->
-                            <div class="flex items-center space-x-2 text-background/80">
+                            <div class="flex items-center space-x-2 text-background">
                                 <span>© 2024 P2P Healthcare PLC. Made with</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="currentColor"
                                     viewBox="0 0 24 24">
@@ -1179,254 +1177,254 @@
         </div>
     </div>
 
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
- //preeloder
- <script>
-    window.addEventListener("load", () => {
-      gsap.to("#preloader", {
-        duration: 1,
-        y: "100%",
-        ease: "power3.inOut",
-        onComplete: () => {
-          document.getElementById("preloader").style.display = "none";
-          document.body.style.overflow = "visible";
-        }
-      });
-    });
-  </script>
-// Smooth Scroller for full page
-<script>
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-    ScrollSmoother.create({
-         wrapper: "#smooth-wrapper",
-        content: "#smooth-content",
-        smooth: 2,
-        effects: true,
-        smoothTouch: 0.46,
-        normalizeScroll: true,
-        ignoreMobileResize: false,
-    });
-</script>
-//banner slider
-<script>
-    const afterImage = document.querySelector(".afterImage");
-    const afterImg = afterImage.querySelector("img");
-
-    gsap.to(afterImage, {
-        x: "0%",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".comparisonSection",
-            start: "top top",
-            end: "bottom top",
-            scrub: 2,
-            pin: true,
-            anticipatePin: 1
-        }
-    });
-
-    gsap.to(afterImg, {
-        x: "0%",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".comparisonSection",
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 2,
-        }
-    });
-</script>
-//masonry
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.from(".masonry-img", {
-        scrollTrigger: {
-            trigger: ".masonry-images",
-            start: "top 65%",
-            end: "bottom 35%",
-            toggleActions: "play none none none"
-        },
-        y: 100,
-        opacity: 0,
-        scale: 0.9,
-        duration: 1.5,
-        ease: "power3.out",
-        stagger: {
-            amount: 1, // সবগুলো stagger হয়ে একে একে animate হবে
-            from: "random"
-        }
-    });
-</script>
-//footer slider
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Select elements
-    const footerAfterImage = document.querySelector(".footer_afterImage");
-    const footerAfterImg = footerAfterImage.querySelector("img");
-
-    // Animate the container
-    gsap.to(footerAfterImage, {
-        x: "0%",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".footer_comparison",
-            start: "top top",
-            end: "bottom top",
-            scrub: true,
-            pin: true,
-            anticipatePin: 1
-        }
-    });
-
-    // Animate the image inside
-    gsap.to(footerAfterImg, {
-        x: "0%",
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".footer_comparison",
-            start: "top top",
-            end: "bottom top",
-            scrub: true
-        }
-    });
-</script>
-//primary scroll text animation
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    function splitText(el) {
-        const text = el.innerText;
-        el.innerHTML = text.split(" ").map(word => `<span class="word">${word}</span>`).join(" ");
-    }
-
-    document.querySelectorAll("#primary_Section").forEach(section => {
-        const title = section.querySelector("#primary_title");
-        const subtitle = section.querySelector("#primary_subtitle");
-        const button = section.querySelector("#primary_button a");
-
-        if (title) splitText(title);
-        if (subtitle) splitText(subtitle);
-
-        if (title) {
-            gsap.from(title.querySelectorAll(".word"), {
-                y: 100,
-                opacity: 0,
-                stagger: 0.1,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <script>
+        //preeloder
+        window.addEventListener("load", () => {
+            gsap.to("#preloader", {
                 duration: 1,
-                ease: "power4.out",
-                scrollTrigger: {
-                    trigger: title,
-                    start: "top 80%",
+                y: "100%",
+                ease: "power3.inOut",
+                onComplete: () => {
+                    document.getElementById("preloader").style.display = "none";
+                    document.body.style.overflow = "visible";
                 }
             });
-        }
-
-        if (subtitle) {
-            gsap.from(subtitle.querySelectorAll(".word"), {
-                y: 50,
-                opacity: 0,
-                stagger: 0.05,
-                duration: 0.8,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: subtitle,
-                    start: "top 80%",
-                }
-            });
-        }
-
-        if (button) {
-            gsap.from(button, {
-                y: 30,
-                opacity: 0,
-                duration: 0.8,
-                ease: "back.out(1)",
-                scrollTrigger: {
-                    trigger: button,
-                    start: "top 90%",
-                }
-            });
-        }
-    });
-</script>
-//Secondary scroll text animation
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    function splitLines(el) {
-        const text = el.innerText;
-        el.innerHTML = ''; // clear original
-        const lines = text.split("\n"); // split by new lines
-        lines.forEach(line => {
-            const lineWrapper = document.createElement("div");
-            lineWrapper.classList.add("line");
-            lineWrapper.innerText = line;
-            el.appendChild(lineWrapper);
         });
-    }
+    </script>
+    <script>
+        // Smooth Scroller for full page
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+        ScrollSmoother.create({
+            wrapper: "#smooth-wrapper",
+            content: "#smooth-content",
+            smooth: 2,
+            effects: true,
+            smoothTouch: 1,
+            normalizeScroll: true,
+            ignoreMobileResize: false,
+        });
+    </script>
+    <script>
+        //banner slider
+        const afterImage = document.querySelector(".afterImage");
+        const afterImg = afterImage.querySelector("img");
 
-    // Animate multiple sections
-    document.querySelectorAll("#headerSection").forEach(section => {
-        const title = section.querySelector("#secondary_title");
-        const subtitle = section.querySelector("#secondary_subtitle");
-
-        if (title) splitLines(title);
-        if (subtitle) splitLines(subtitle);
-
-        if (title) {
-            gsap.from(title.querySelectorAll(".line"), {
-                y: 100,
-                opacity: 0,
-                stagger: 0.2,
-                duration: 1.5,
-                ease: "power4.out",
-                scrollTrigger: {
-                    trigger: title,
-                    start: "top 80%"
-                }
-            });
-        }
-
-        if (subtitle) {
-            gsap.from(subtitle.querySelectorAll(".line"), {
-                y: 50,
-                opacity: 0,
-                stagger: 0.15,
-                duration: 1.2,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: subtitle,
-                    start: "top 80%"
-                }
-            });
-        }
-    });
-</script>
-//Card animation
-<script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    document.querySelectorAll(".card").forEach(card => {
-        gsap.from(card, {
-            y: 80,
-            opacity: 0,
-            duration: 2,
-            ease: "power2.out",
+        gsap.to(afterImage, {
+            x: "0%",
+            ease: "none",
             scrollTrigger: {
-                trigger: card,
-                start: "top 80%",
-                toggleActions: "play none none none"
+                trigger: ".comparisonSection",
+                start: "top top",
+                end: "bottom top",
+                scrub: 2,
+                pin: true,
+                anticipatePin: 1
             }
         });
-    });
-</script>
 
+        gsap.to(afterImg, {
+            x: "0%",
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".comparisonSection",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: 2,
+            }
+        });
+    </script>
+    <script>
+        //masonry
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".masonry-img", {
+            scrollTrigger: {
+                trigger: ".masonry-images",
+                start: "top 65%",
+                end: "bottom 35%",
+                toggleActions: "play none none none"
+            },
+            y: 100,
+            opacity: 0,
+            scale: 0.9,
+            duration: 1.5,
+            ease: "power3.out",
+            stagger: {
+                amount: 1, // সবগুলো stagger হয়ে একে একে animate হবে
+                from: "random"
+            }
+        });
+    </script>
+    <script>
+        //footer slider
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Select elements
+        const footerAfterImage = document.querySelector(".footer_afterImage");
+        const footerAfterImg = footerAfterImage.querySelector("img");
+
+        // Animate the container
+        gsap.to(footerAfterImage, {
+            x: "0%",
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".footer_comparison",
+                start: "top top",
+                end: "bottom top",
+                scrub: true,
+                pin: true,
+                anticipatePin: 1
+            }
+        });
+
+        // Animate the image inside
+        gsap.to(footerAfterImg, {
+            x: "0%",
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".footer_comparison",
+                start: "top top",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+    </script>
+    <script>
+        //primary scroll text animation
+        gsap.registerPlugin(ScrollTrigger);
+
+        function splitText(el) {
+            const text = el.innerText;
+            el.innerHTML = text.split(" ").map(word => `<span class="word">${word}</span>`).join(" ");
+        }
+
+        document.querySelectorAll("#primary_Section").forEach(section => {
+            const title = section.querySelector("#primary_title");
+            const subtitle = section.querySelector("#primary_subtitle");
+            const button = section.querySelector("#primary_button a");
+
+            if (title) splitText(title);
+            if (subtitle) splitText(subtitle);
+
+            if (title) {
+                gsap.from(title.querySelectorAll(".word"), {
+                    y: 100,
+                    opacity: 0,
+                    stagger: 0.1,
+                    duration: 1,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: title,
+                        start: "top 80%",
+                    }
+                });
+            }
+
+            if (subtitle) {
+                gsap.from(subtitle.querySelectorAll(".word"), {
+                    y: 50,
+                    opacity: 0,
+                    stagger: 0.05,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: subtitle,
+                        start: "top 80%",
+                    }
+                });
+            }
+
+            if (button) {
+                gsap.from(button, {
+                    y: 30,
+                    opacity: 0,
+                    duration: 0.8,
+                    ease: "back.out(1)",
+                    scrollTrigger: {
+                        trigger: button,
+                        start: "top 90%",
+                    }
+                });
+            }
+        });
+    </script>
+    <script>
+        //Secondary scroll text animation
+        gsap.registerPlugin(ScrollTrigger);
+
+        function splitLines(el) {
+            const text = el.innerText;
+            el.innerHTML = ''; // clear original
+            const lines = text.split("\n"); // split by new lines
+            lines.forEach(line => {
+                const lineWrapper = document.createElement("div");
+                lineWrapper.classList.add("line");
+                lineWrapper.innerText = line;
+                el.appendChild(lineWrapper);
+            });
+        }
+
+        // Animate multiple sections
+        document.querySelectorAll("#headerSection").forEach(section => {
+            const title = section.querySelector("#secondary_title");
+            const subtitle = section.querySelector("#secondary_subtitle");
+
+            if (title) splitLines(title);
+            if (subtitle) splitLines(subtitle);
+
+            if (title) {
+                gsap.from(title.querySelectorAll(".line"), {
+                    y: 100,
+                    opacity: 0,
+                    stagger: 0.2,
+                    duration: 1.5,
+                    ease: "power4.out",
+                    scrollTrigger: {
+                        trigger: title,
+                        start: "top 80%"
+                    }
+                });
+            }
+
+            if (subtitle) {
+                gsap.from(subtitle.querySelectorAll(".line"), {
+                    y: 50,
+                    opacity: 0,
+                    stagger: 0.15,
+                    duration: 1.2,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: subtitle,
+                        start: "top 80%"
+                    }
+                });
+            }
+        });
+    </script>
+    <script>
+        //Card animation
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.querySelectorAll(".card").forEach(card => {
+            gsap.from(card, {
+                y: 80,
+                opacity: 0,
+                duration: 2,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    </script>
+
+</body>
 
 </html>
