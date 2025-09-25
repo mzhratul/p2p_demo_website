@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@theme {
+  /* Core Brand Colors */
+  --color-test: #fb5200;
+  --color-background: hsl(0, 0%, 100%);
+  --color-foreground: hsl(210, 24%, 16%);
+
+  /* Medical Blue Theme */
+  --color-primary: hsl(195, 84%, 50%);
+  --color-primary-light: hsl(195, 84%, 75%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+
+  /* Medical Coral/Orange */
+  --color-accent: hsl(14, 85%, 58%);
+  --color-accent-light: hsl(14, 85%, 75%);
+  --color-accent-foreground: hsl(0, 0%, 100%);
+
+  /* Healthcare neutrals */
+  --color-secondary: hsl(210, 40%, 96%);
+  --color-secondary-foreground: hsl(210, 24%, 16%);
+
+  --color-muted: hsl(210, 40%, 98%);
+  --color-muted-foreground: hsl(215, 20%, 65%);
+
+  --color-card: hsl(0, 0%, 100%);
+  --color-card-foreground: hsl(210, 24%, 16%);
+
+  --color-popover: hsl(0, 0%, 100%);
+  --color-popover-foreground: hsl(210, 24%, 16%);
+
+  --color-destructive: hsl(0, 84%, 60%);
+  --color-destructive-foreground: hsl(0, 0%, 100%);
+
+  --color-border: hsl(214, 32%, 91%);
+  --color-input: hsl(214, 32%, 91%);
+  --color-ring: hsl(195, 84%, 50%);
+
+  /* Medical Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(195, 84%, 50%),
+    hsl(195, 84%, 65%)
+  );
+  --gradient-accent: linear-gradient(
+    135deg,
+    hsl(14, 85%, 58%),
+    hsl(14, 85%, 68%)
+  );
+  --gradient-hero: linear-gradient(
+    135deg,
+    hsla(195, 84%, 50%, 0.05),
+    hsla(14, 85%, 58%, 0.05)
+  );
+
+  /* Medical Shadows */
+  --shadow-medical: 0 10px 30px -10px hsla(195, 84%, 50%, 0.15);
+  --shadow-accent: 0 10px 30px -10px hsla(14, 85%, 58%, 0.15);
+  --shadow-soft: 0 4px 20px -4px hsla(210, 24%, 16%, 0.08);
+
+  --radius: 0.5rem;
+
+  --sidebar-background: hsl(0, 0%, 98%);
+  --sidebar-foreground: hsl(240, 5.3%, 26.1%);
+  --sidebar-primary: hsl(240, 5.9%, 10%);
+  --sidebar-primary-foreground: hsl(0, 0%, 98%);
+  --sidebar-accent: hsl(240, 4.8%, 95.9%);
+  --sidebar-accent-foreground: hsl(240, 5.9%, 10%);
+  --sidebar-border: hsl(220, 13%, 91%);
+  --sidebar-ring: hsl(217.2, 91.2%, 59.8%);
+
+  /* Medical Animation Variables */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  --radius: 12px;
+}
